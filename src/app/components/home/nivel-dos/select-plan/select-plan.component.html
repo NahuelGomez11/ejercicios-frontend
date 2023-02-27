@@ -50,12 +50,19 @@
                     Mensual
                 </div>
 
-                <button class="border border-black w-[50px] h-[25px] rounded-full p-0.5 bg-blue-900 flex focus:justify-end my-auto mx-5">
-                    <div class="w-[19px] h-[19px] border border-black rounded-full bg-white">
+                <button name="miSwich" (click)="mensualOAnual()"  class="border border-black w-[50px] h-[25px] rounded-full p-0.5 bg-blue-900 flex  my-auto mx-5">
+                    <div class="w-full">
+
+                        <div *ngIf="mensual == true" class=" w-[19px] h-[19px] border border-black rounded-full bg-white">
+                        </div>
                     </div>
-                </button>
-                <input type="range">
-                
+
+                    <div class="flex justify-end w-full">
+
+                        <div *ngIf="mensual == false"  class="w-[19px] h-[19px] border border-black rounded-full bg-white">
+                        </div>
+                    </div>
+                </button>                
                 <div class="my-auto">
                     Anual
                 </div>

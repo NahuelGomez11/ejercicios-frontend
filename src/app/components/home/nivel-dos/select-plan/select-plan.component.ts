@@ -8,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SelectPlanComponent implements OnInit {
 
+  public mensual = true;
+  
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  mensualOAnual(){
+    if(this.mensual == true)
+    {
+      this.mensual = false;
+    }
+    else
+    {
+      this.mensual = true;
+    }
   }
 
 }
