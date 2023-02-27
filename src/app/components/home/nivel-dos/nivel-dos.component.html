@@ -1,0 +1,89 @@
+<div class="h-[800px]  p-5 bg-gray-200">
+    <div class="w-full">
+        <a href="https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ" type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" class="inline-block px-2 py-1.5 lg:px-4 lg:py-2.5 mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out" style="background-color: #1877f2;">
+            ir a la consigna
+        </a>
+    </div>
+
+    <!--  -->
+    <div class="w-full xl:flex xl:w-8/12 h-[500px] bg-white mx-auto rounded-xl md:p-4 relative">
+        <div class="w-full h-[200px]  md:h-full md:w-4/12 bg-blue-600 rounded-xl md:p-8 relative">
+            <div class="w-full h-full flex justify-center border text-white font-bold absolute visible md:invisible">
+                <div class="w-[40px] h-[40px] mx-3  mt-10 text-center text-xl border-2 rounded-full hover:bg-blue-200 hover:text-black col-span-1 row-span-2 ">
+                    1
+                </div>
+
+                <div class="w-[40px] h-[40px] mx-3  mt-10 text-center text-xl border-2 rounded-full hover:bg-blue-200 hover:text-black col-span-1 row-span-2 ">
+                    2
+                </div>
+                
+                <div class="w-[40px] h-[40px] mx-3  mt-10 text-center text-xl border-2 rounded-full hover:bg-blue-200 hover:text-black col-span-1 row-span-2 ">
+                    3
+                </div>
+
+                <div class="w-[40px] h-[40px] mx-3  mt-10 text-center text-xl border-2 rounded-full hover:bg-blue-200 hover:text-black col-span-1 row-span-2 ">
+                    4
+                </div>
+
+            </div>
+            <div class="w-full h-full invisible md:visible">
+                <!-- Botones -->
+                <div class="md:grid grid-cols-4 grid-rows-3  text-white font-bold">
+                    <button [routerLink]="['your-info']" class="w-[30px] h-[30px]  text-center border rounded-full hover:bg-blue-200 hover:text-black focus:bg-blue-200 focus:text-black col-span-1 row-span-2 my-auto">
+                        1
+                    </button>
+                    <div class=" opacity-50 ">
+                        Step 1
+                    </div>
+                    <div class="col-span-2 row-end-3 col-end-4">
+                        YOUR INFO
+                    </div>
+                </div>
+
+                <!-- Botones -->
+                <div class="md:grid grid-cols-4 grid-rows-3  text-white font-bold">
+                    <button [routerLink]="['select-plan']" class="w-[30px] h-[30px]  text-center border rounded-full hover:bg-blue-200 hover:text-black focus:bg-blue-200  focus:text-black col-span-1 row-span-2 my-auto">
+                        2
+                    </button>
+                    <div class=" opacity-50 ">
+                        Step 2
+                    </div>
+                    <div class="col-span-2 row-end-3 col-end-4">
+                        SELECT PLAN
+                    </div>
+                </div>
+
+                <!-- Botones -->
+                <div class="md:grid grid-cols-4 grid-rows-3  text-white font-bold">
+                    <div class="w-[30px] h-[30px]  text-center border rounded-full hover:bg-blue-200 hover:text-black col-span-1 row-span-2 my-auto">
+                        3
+                    </div>
+                    <div class=" opacity-50 ">
+                        Step 3
+                    </div>
+                    <div class="col-span-2 row-end-3 col-end-4">
+                        ADD-ONS
+                    </div>
+                </div>
+
+                <!-- Botones -->
+                <div class="md:grid grid-cols-4 grid-rows-3  text-white font-bold">
+                    <div class="w-[30px] h-[30px]  text-center border rounded-full hover:bg-blue-200 hover:text-black col-span-1 row-span-2 my-auto">
+                        4
+                    </div>
+                    <div class=" opacity-50 ">
+                        Step 4
+                    </div>
+                    <div class="col-span-2 row-end-3 col-end-4">
+                        SUMMARY
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Formulario -->
+        <div class="w-full top-36 md:w-7/12 md:top-0 h-full bg-white rounded-xl absolute md:right-0    ">
+            <router-outlet></router-outlet>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="p-5 w-full h-full  rounded-xl">
+    <!-- Textos -->
+    <div class="mt-5">
+        <div class="font-semibold text-3xl">
+            Informacion personal
+        </div>
+        <div class="mt-2 text-sm font-semibold opacity-70">
+            por favor ingrese su nombre, e-mail y numero de telefono
+        </div>
+    </div>
+    <!-- Formulario -->
+    <div class="mt-7">
+        <div class="w-full md:w-10/12">
+            <div class="mt-2 text-sm font-semibold mb-2">
+                Nombre
+            </div>
+            <input class="border border-black text-black w-full font-semibold text-sm p-2 rounded-md hover:p-3 focus:p-3" placeholder="ej: Nahuel" type="text">
+
+            <div class="mt-2 text-sm font-semibold mb-2">
+                E-Mail
+            </div>
+            <input class="border border-black text-black w-full font-semibold text-sm p-2 rounded-md hover:p-3 focus:p-3" placeholder="ej:RogelioBuenDia@Gmail.Com" type="text">
+
+            <div class="mt-2 text-sm font-semibold mb-2">
+                Numero de telefono
+            </div>
+            <input class="border border-black text-black w-full font-semibold text-sm p-2 rounded-md hover:p-3 focus:p-3" placeholder="1234-567810" type="text">
+        </div>
+    </div>
+    <!-- Boton de Siguiente -->
+    <div class="w-10/12 h-[120px] relative invisible md:visible">
+        <button [routerLink]="['/home/nivel-2/select-plan']" class="absolute bottom-[0px] right-[0px] bg-blue-900 text-white font-semibold text-sm p-2 rounded-md hover:bg-blue-800">
+            Siguiente 
+        </button>
+    </div>
+</div>
+<div class="w-full mt-5 flex justify-end  bg-white p-4 relative visible md:invisible">
+    <button [routerLink]="['/home/nivel-2/select-plan']" class="  bg-blue-900 text-white font-semibold text-sm p-2 rounded-md hover:bg-blue-800">
+        Siguiente 
+    </button>
+</div>
