@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-select-plan',
@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class SelectPlanComponent implements OnInit {
 
   public mensual = true;
+  public duracionDelPlan = 'Mensual';
   
   constructor() { }
 
@@ -19,10 +20,12 @@ export class SelectPlanComponent implements OnInit {
     if(this.mensual == true)
     {
       this.mensual = false;
+      this.duracionDelPlan = "Anual";
     }
     else
     {
       this.mensual = true;
+      this.duracionDelPlan = "Mensual";
     }
   }
 
