@@ -14,22 +14,23 @@
             <div class="mt-2 text-sm font-semibold mb-2">
                 Nombre
             </div>
-            <input [(ngModel)]="nombre" name="nombre" class="border border-black text-black w-full font-semibold text-sm p-2 rounded-md hover:p-3 focus:p-3" placeholder="ej: Nahuel" type="text">
+            <input required [(ngModel)]="nombre" name="nombre" class="border border-black text-black w-full font-semibold text-sm p-2 rounded-md hover:p-3 focus:p-3" placeholder="ej: Nahuel" type="text">
 
             <div class="mt-2 text-sm font-semibold mb-2">
                 E-Mail
             </div>
-            <input [(ngModel)]="email" name="mail" class="border border-black text-black w-full font-semibold text-sm p-2 rounded-md hover:p-3 focus:p-3" placeholder="ej:RogelioBuenDia@Gmail.Com" type="text">
+            <input required type="email" [(ngModel)]="email" name="mail" class="border border-black text-black w-full font-semibold text-sm p-2 rounded-md hover:p-3 focus:p-3" placeholder="ej:RogelioBuenDia@Gmail.Com" type="text">
 
             <div class="mt-2 text-sm font-semibold mb-2">
                 Numero de telefono
             </div>
-            <input [(ngModel)]="numeroDeTelefono" name="telefono" class="border border-black text-black w-full font-semibold text-sm p-2 rounded-md hover:p-3 focus:p-3" placeholder="1234-567810" type="text">
+            <input required type="tel" [(ngModel)]="numeroDeTelefono" name="telefono" class="border border-black text-black w-full font-semibold text-sm p-2 rounded-md hover:p-3 focus:p-3" placeholder="1234-567810" type="text">
         </div>
     </div>
     <!-- Boton de Siguiente -->
     <div class="w-10/12 h-[120px] relative invisible md:visible">
-        <button type="submit"  [routerLink]="['/home/nivel-2/select-plan']" class="absolute bottom-[0px] right-[0px] bg-blue-900 text-white font-semibold text-sm p-2 rounded-md hover:bg-blue-800">
+        <button type="submit"   class="absolute bottom-[0px] right-[0px] bg-blue-900 text-white font-semibold text-sm p-2 rounded-md hover:bg-blue-800">
+            <!-- [routerLink]="['/home/nivel-2/select-plan']" -->
             Siguiente 
         </button>
     </div>

@@ -13,4 +13,9 @@ export class NivelDosComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  eliminarDatos(){
+    localStorage.removeItem('datosCliente');
+    localStorage.setItem('datosCliente', JSON.stringify([]));
+  }
+
 }

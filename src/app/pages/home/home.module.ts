@@ -11,6 +11,8 @@ import { NivelTresComponent } from 'src/app/components/home/nivel-tres/nivel-tre
 import { NivelCuatroComponent } from 'src/app/components/home/nivel-cuatro/nivel-cuatro.component';
 import { YourInfoComponent } from 'src/app/components/home/nivel-dos/your-info/your-info.component';
 import { SelectPlanComponent } from 'src/app/components/home/nivel-dos/select-plan/select-plan.component';
+import { AddOnsComponent } from 'src/app/components/home/nivel-dos/add-ons/add-ons.component';
+import { SummaryComponent } from 'src/app/components/home/nivel-dos/summary/summary.component';
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import { SelectPlanComponent } from 'src/app/components/home/nivel-dos/select-pl
     NivelCuatroComponent,
     YourInfoComponent,
     SelectPlanComponent,
+    AddOnsComponent,
+    SummaryComponent,
 
     
   ],

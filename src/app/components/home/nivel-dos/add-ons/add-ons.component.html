@@ -1,0 +1,72 @@
+<form name="miFormulario" class="p-5 w-full h-full  rounded-xl">
+    <!-- Textos -->
+    <div class="mt-5">
+        <div class="font-semibold text-3xl">
+            Elegir complementos
+        </div>
+        <div class="mt-2 text-sm font-semibold opacity-70">
+            Añadir complementos ayuda a su experiencia de juego
+        </div>
+    </div>
+    <!-- Formulario -->
+    <div class="mt-7">
+        <div class="w-full md:w-10/12">
+            <button class="w-full grid grid-cols-6 grid-rows-2 border border-black rounded-md font-semibold text-sm p-2 hover:border-blue-800 focus:border-blue-800 hover:bg-blue-100 focus:bg-blue-100 mt-5">
+                <div class="row-span-2 my-auto">
+                    <input (click)="seleccionarServicioEnLinea('servicioEnLinea')"  id="servicioEnLinea" type="checkbox" class="w-[28px] h-[28px]">
+                </div>
+                <div class="text-start mx-5 col-span-5">
+                    Servicio en línea
+                </div>
+                <div class="text-start mx-5 row-start-2 col-start-2 col-span-5 opacity-70 flex">
+                    Acceso para juegos multi jugador
+                </div>
+            </button>
+
+            <button class="w-full grid grid-cols-6 grid-rows-2 border border-black rounded-md font-semibold text-sm p-2 hover:border-blue-800 focus:border-blue-800 hover:bg-blue-100 focus:bg-blue-100 mt-5">
+                <div class="row-span-2 my-auto">
+                    <input (click)="seleccionarAlmacenamiento('almacenamiento')" id="almacenamiento" type="checkbox" class="w-[28px] h-[28px]">
+                </div>
+                <div class="text-start mx-5 col-span-5">
+                    Almacenamiento grande
+                </div>
+                <div class="text-start mx-5 row-start-2 col-start-2 col-span-5 opacity-70 flex">
+                    +1TB de almacenamiento en la nube
+                </div>
+            </button>
+
+            <button class="w-full grid grid-cols-6 grid-rows-2 border border-black rounded-md font-semibold text-sm p-2 hover:border-blue-800 focus:border-blue-800 hover:bg-blue-100 focus:bg-blue-100 mt-5">
+                <div class="row-span-2 my-auto">
+                    <input (click)="seleccionarPerfilPersonalizable('perfilPersonalizable')" id="perfilPersonalizable" type="checkbox" class="w-[28px] h-[28px]">
+                </div>
+                <div class="text-start mx-5 col-span-5">
+                    Perfil personalizable 
+                </div>
+                <div class="text-start mx-5 row-start-2 col-start-2 col-span-5 opacity-70 flex">
+                    Personaliza en tu perfil
+                </div>
+            </button>
+        </div>
+    </div>
+    <!-- Boton de Siguiente -->
+    <div class="w-10/12 h-[120px] relative invisible md:visible">
+        <button type="submit" (click)="guardarDatosPerfil()"  class="absolute bottom-[0px] right-[0px] bg-blue-900 text-white font-semibold text-sm p-2 rounded-md hover:bg-blue-800">
+            Siguiente 
+        </button>
+    </div>
+</form>
+
+
+<div class="flex">
+    <div class="w-full mt-5 flex justify-start  bg-white p-4 relative visible md:invisible ">
+        <button [routerLink]="['/home/nivel-2/select-plan']" class="text-sm font-semibold opacity-70 my-auto">
+            Volver
+        </button>
+    </div>
+    <div class="w-full mt-5 flex justify-end  bg-white p-4 relative visible md:invisible">
+        <button [routerLink]="['/home/nivel-2/summary']"
+            class="  bg-blue-900 text-white font-semibold text-sm p-2 rounded-md hover:bg-blue-800">
+            Siguiente
+        </button>
+    </div>
+</div>
