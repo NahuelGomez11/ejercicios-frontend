@@ -13,6 +13,7 @@ import { YourInfoComponent } from 'src/app/components/home/nivel-dos/your-info/y
 import { SelectPlanComponent } from 'src/app/components/home/nivel-dos/select-plan/select-plan.component';
 import { AddOnsComponent } from 'src/app/components/home/nivel-dos/add-ons/add-ons.component';
 import { SummaryComponent } from 'src/app/components/home/nivel-dos/summary/summary.component';
+import { CardCountriesComponent } from 'src/app/components/home/nivel-cuatro/card-countries/card-countries.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { SummaryComponent } from 'src/app/components/home/nivel-dos/summary/summ
     SelectPlanComponent,
     AddOnsComponent,
     SummaryComponent,
+    CardCountriesComponent,
 
     
   ],

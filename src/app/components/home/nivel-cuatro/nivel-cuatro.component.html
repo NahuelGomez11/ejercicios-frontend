@@ -1,1 +1,48 @@
-<p>nivel-cuatro works!</p>
+<!-- navBar -->
+<div class="w-full bg-white shadow-xl h-[70px]">
+    <div class="grid grid-cols-2 w-11/12 mx-auto h-full font-bold">
+        <div class="my-auto text-xl">
+            Donde en el mundo?
+        </div>
+        <button class="w-full flex justify-end my-auto ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+              </svg>
+              
+           <div class="mx-3">
+            Modo oscuro
+           </div>
+        </button>
+    </div>
+</div>
+
+<!-- page content -->
+<div class="w-full bg-gray-100 h-[100px]">
+    <div class="grid grid-cols-2 w-11/12 mx-auto h-full">
+        <div class="my-auto col-span-2 sm:col-span-1">
+            <input id="buscar" class="w-full sm:w-6/12 shadow-md rounded-md p-2" type="search" placeholder="Busca un pais..." (keydown)="buscar()">
+        </div>
+        <div class="my-auto col-span-2 sm:col-span-1 w-full flex justify-start sm:justify-end">
+            <select (change)="filtrar()" name="selectContinentes" id="selectContinentes" class="p-2 rounded-md">
+                <option disabled selected>Filtrar por continentes</option>
+                <option value="africa">Africa</option>
+                <option value="americas">America</option>
+                <option value="asia">Asia</option>
+                <option value="europe">Europa</option>
+                <option value="oceania">Oseania</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="w-full bg-gray-100 ">
+    <div  class="w-11/12 mx-auto  w-full grid grid-cols-1 md:grid-cols-4 w-full gap-5">
+        <!-- cards -->
+        <div *ngFor="let pais of paises" class="mx-auto my-5 ml-12">
+            <app-card-countries [pais]="pais"></app-card-countries>
+        </div>
+        
+        
+
+    </div>
+</div>

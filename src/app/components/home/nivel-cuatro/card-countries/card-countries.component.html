@@ -1,0 +1,22 @@
+<div  class="w-11/12 sm:w-[230px] h-[400px] sm:h-[300px] shadow bg-white rounded-md  sm:mr-10 hover:shadow-xl">
+    <!-- image -->
+    <div class="h[200px] sm:h-[130px] shadow-md">
+        <img class="w-full h-full rounded-t-md" [src]="pais.flags.png" alt="">
+    </div>
+    <!-- name -->
+    <div class="w-9/12 mx-auto mt-5 sm:mt-2">
+        <div class="font-bold mb-3">
+            {{pais.name}}
+        </div>
+        <div class="my-1">
+            <span class="font-bold text-sm">Poblacion: </span> <span class="text-sm">{{pais.population}}</span>
+        </div>
+        <div class="my-1">
+            <span class="font-bold text-sm">Continente: </span> <span class="text-sm">{{pais.region}}</span>
+        </div>
+        <div class="my-1">
+            <span class="font-bold text-sm">Capital: </span> <span class="text-sm">{{pais.capital}}</span>
+        </div>
+    </div>
+
+</div>
